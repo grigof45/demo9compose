@@ -7,4 +7,5 @@
 
 == Работа с Docker compose
 Запустить в терминале docker-compose up -d
-Остановить контейнеры docker-compose down
+Остановить контейнеры docker-compose stop 
+Остановить и удалить контейнеры docker-compose down

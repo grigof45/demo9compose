@@ -9,6 +9,9 @@ services:
       - demo9db-data:/opt/h2-data
   demo7-reactshop:
     image: demo7reactshop:latest 
+    environment:
+      - API_KEY=${REACTSHOP_API_KEY}
+      - API_URL=${REACTSHOP_API_URL}
     ports:
       - "80:3000"
 volumes:

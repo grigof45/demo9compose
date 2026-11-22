@@ -1,0 +1,9 @@
+# Запустить в терминале docker-compose up -d
+# Остановить контейнеры docker-compose down
+services:   
+  demo9-restful:
+    image: demo9:latest    
+    ports:
+      - "8081:8080"
+    volumes:
+      - demo9-db-data:/opt/h2-data      

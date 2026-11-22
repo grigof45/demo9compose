@@ -2,8 +2,14 @@
 # Остановить контейнеры docker-compose down
 services:   
   demo9-restful:
-    image: demo9:latest    
+    image: demo9restful:latest    
     ports:
       - "8081:8080"
     volumes:
-      - demo9-db-data:/opt/h2-data      
+      - demo9db-data:/opt/h2-data
+  demo7-reactshop:
+    image: demo7reactshop:latest 
+    ports:
+      - "80:3000"
+volumes:
+  demo9db-data:     

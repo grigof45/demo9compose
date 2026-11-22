@@ -1,0 +1,10 @@
+:spring_data_commons: current
+:toc:
+:icons: font
+:source-highlighter: prettify
+:project_id: demo9compose
+:java_version: 25
+
+== Работа с Docker compose
+Запустить в терминале docker-compose up -d
+Остановить контейнеры docker-compose down
